@@ -9,3 +9,6 @@ def twoNumberSum(array, targetSum):
 
 	ret =list(set(ret))
 	return ret
+
+
+# O(n^2) time | O(1) space
