@@ -8,7 +8,16 @@ def twoNumberSum(array, targetSum):
 
 	return ret
 
+#use dictionary
 
+    nums = {}
+    for num in array:
+        potentialMatch = targetSum - num
+        if potentialMatch in array:
+            return [ num, potentialMatch ]
+        else:
+            nums[num] = True
 
+    return []
 
 # O(n) time | O(n) space
